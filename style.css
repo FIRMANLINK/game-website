@@ -1,0 +1,226 @@
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+ height: 100vh; 
+}
+
+.text a {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    
+}
+
+.gambar {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://w.wallhaven.cc/full/x8/wallhaven-x8xvdo.jpg');
+}
+
+.text h1 {
+    margin: 10px 0 10px 0;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+
+.tabel {
+    margin: 100px;
+    display: flex;
+    gap: 150px;
+
+    
+}
+
+.gambarsaber img{
+    width: 300px;
+}
+
+
+
+
+
+
+
+.game {
+    display: flex;
+    padding: 50px;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+
+.text-game ul li {
+    margin-left: 20px;
+}
+
+
+.text-game h3 {
+    margin-bottom: 10px;
+}
+
+.list {
+    margin-top: 50px;
+    
+}
+
+.text-game {
+    width: 600px;
+}
+.game-details {
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.play-board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: #212837;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  background-size: cover;
+}
+.play-board .food {
+  background: #FF003D;
+ 
+}
+.play-board .head {
+  background: #60CBFF;
+ 
+}
+
+.controls {
+  display: none;
+  justify-content: space-between;
+}
+.controls i {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #B8C6DC;
+  width: calc(100% / 4);
+  cursor: pointer;
+  border-right: 1px solid #171B26;
+  
+}
+
+@media (min-width: 320px) {
+    .text h1 {
+        line-height: 30px;
+    }
+
+    .list {
+        margin-top: 10px;
+    }
+
+    .saver {
+        font-size: 10px;
+    }
+
+    body {
+        height: 190vh;
+    }
+
+    .tabel {
+        padding: 10px;
+        display: flex;
+        margin: 20px;
+    }
+
+    .gambarsaber {
+        display: none;
+    }
+
+   
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+    margin: 5px auto;
+    
+  }
+
+
+  .gambar {
+    background-image: url('https://w.wallhaven.cc/full/od/wallhaven-odvmqm.png');
+    background-size: cover;
+    color: white;
+  }
+
+  .text p {
+    font-size: 0.5em;
+  }
+
+ .text h3 {
+    font-size: 10px;
+ }
+
+ 
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    display: flex;
+    
+  }
+
+  .text-game {
+    margin: 30px;
+    width: auto;
+  }
+
+  .list {
+    margin-top: 50px;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    
+    
+  }
+}
+
+
+
